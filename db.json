@@ -1,3 +1,28 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "my name is adam",
+      "id": "127790ef-89a7-4d53-b8bd-3e0bcfc641c0",
+      "createdAt": "2025-03-02T15:59:50.090Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice to meet you, Adam! How can I assist you today?",
+      "id": "5f0e3f2a-dde3-4881-9285-b018de21a780",
+      "createdAt": "2025-03-02T15:59:51.402Z"
+    },
+    {
+      "role": "user",
+      "content": "what is my name",
+      "id": "96e404e5-e9cf-4fa7-ac05-ed211dcda9bf",
+      "createdAt": "2025-03-02T16:00:15.269Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Your name is Adam. How can I help you today?",
+      "id": "67c249ce-5e71-432a-855d-6cc8a3939687",
+      "createdAt": "2025-03-02T16:00:15.926Z"
+    }
+  ]
 }
