@@ -10,4 +10,7 @@ if (!userMessage) {
 }
 
 
-const messages = await runAgent({ userMessage, tools, })
+await runAgent({
+  userMessage,
+  tools,
+})

@@ -7,22 +7,22 @@ export const generateImageToolDefinition = {
   parameters: z.object({
     prompt: z
       .string()
-      .description('The prompt to use to generate the image with a diffusion model image generator like Dall-E'),
-  }),
-  description: ('generate a image then return url of the image'),
+      .describe('The prompt to use to generate the image with a diffusion model image generator like Dall-E'),
+  })
+  .describe ('generate a image then return url of the image'),
 }
 
 type Args = z.infer<typeof generateImageToolDefinition.parameters>
 
 export const generateImage: ToolFn<Args, string> = async ({toolArgs, userMessage}) => {
-  const {response} = await openai.images.generate({
+  const response = await openai.images.generate({
     model: 'dall-e-3',
     prompt: toolArgs.prompt,
     n: 1,
     size: '1024x1024'
   })
 
-  const imageUrl = response.data[0].URL!
+  const imageUrl = response.data[0].url!
 
   return imageUrl
 }

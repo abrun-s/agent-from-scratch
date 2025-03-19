@@ -1,7 +1,7 @@
 import type OpenAI from 'openai'
-import { generateImageToolDefinition } from './tools/generateImage'
-import { dadJokeToolDefinition } from './tools/dadjoke'
-import { redditToolDefinition } from './tools/reddit'
+import { generateImage, generateImageToolDefinition } from './tools/generateImage'
+import { dadJoke, dadJokeToolDefinition } from './tools/dadjoke'
+import { reddit, redditToolDefinition } from './tools/reddit'
 
 
 
@@ -15,17 +15,16 @@ export const runTool = async (
   }
 
   switch (toolCall.function.name) {
-    case 'generate_image':
-      const image = await generateImageToolDefinition(input)
-      return image
+    case generateImageToolDefinition.name:
+      return generateImage(input)
 
-    case 'dad_joke':
-      return dadJokeToolDefinition(input)
+    case dadJokeToolDefinition.name:
+      return dadJoke(input)
 
-    case 'reddit':
-      return redditToolDefinition(input)
+    case redditToolDefinition.name:
+      return reddit(input)
 
     default:
-      throw new Error(`Unknown tool: ${toolCall.function.name}`)
+      return `Never run this tool: ${toolCall.function.name} again or else`
   }
 }
