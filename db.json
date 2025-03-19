@@ -2,52 +2,27 @@
   "messages": [
     {
       "role": "user",
-      "content": "make a image from a random dad joke from a reddit post",
-      "id": "ae6b9877-38fb-4d6d-8b01-8b2246c04af2",
-      "createdAt": "2025-03-19T19:29:52.409Z"
+      "content": "make a dad joke from a reddit post and make a image",
+      "id": "19ed7ac4-7912-4b35-b99f-2ff3110951d5",
+      "createdAt": "2025-03-19T19:56:04.288Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_WsWEeJfikgoMBS66lorpMCAc",
+          "id": "call_XCKOk9wTt1gwpTOMF7jb8WU6",
           "type": "function",
           "function": {
-            "name": "dad_joke",
+            "name": "reddit",
             "arguments": "{}"
           }
         }
       ],
       "refusal": null,
       "annotations": [],
-      "id": "b35d54c7-e88a-42d4-aa89-aa51ad269caf",
-      "createdAt": "2025-03-19T19:29:54.599Z"
-    },
-    {
-      "role": "tool",
-      "content": "When I left school, I passed every one of my exams with the exception of Greek Mythology. It always was my achilles elbow",
-      "tool_call_id": "call_WsWEeJfikgoMBS66lorpMCAc",
-      "id": "1b6e4fee-dffd-4772-b348-6559628cb438",
-      "createdAt": "2025-03-19T19:29:55.145Z"
-    },
-    {
-      "role": "assistant",
-      "content": null,
-      "tool_calls": [
-        {
-          "id": "call_eKtBtbx9wlu021dTv9HkpCce",
-          "type": "function",
-          "function": {
-            "name": "generate_image",
-            "arguments": "{\"prompt\":\"A humorous illustration depicting a character studying Greek Mythology with a confused expression, surrounded by Greek gods and mythological creatures. The character has a bandaged elbow, symbolizing the joke 'my achilles elbow'. The scene is colorful and cartoonish, capturing the essence of a light-hearted dad joke.\"}"
-          }
-        }
-      ],
-      "refusal": null,
-      "annotations": [],
-      "id": "07489747-26a4-4d70-b1b1-b9afb49378d4",
-      "createdAt": "2025-03-19T19:29:56.624Z"
+      "id": "77dbc08a-6f8d-44cb-9423-0f846a83e2e6",
+      "createdAt": "2025-03-19T19:56:05.841Z"
     }
   ]
 }
