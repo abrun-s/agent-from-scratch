@@ -1,4 +1,3 @@
-[![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)](https://frontendmasters.com/courses/ai-agents/)
 # Build an AI Agent from Scratch Workshop
 
 - Watch the workshop on [Frontend Masters](https://frontendmasters.com/courses/ai-agents/). 
